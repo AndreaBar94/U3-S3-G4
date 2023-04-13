@@ -3,9 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 function NavbarComponent() {
     return (
         <Nav
-        className="navbar justify-content-center p-3 bg-opacity-50"
-        activeKey="/home"
-        >
+        className="navbar justify-content-center p-3 bg-opacity-50">
             <Nav.Item>
                 <Nav.Link className="navBtn" href="#" id="home">Home</Nav.Link>
             </Nav.Item>
