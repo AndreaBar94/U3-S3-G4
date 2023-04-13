@@ -13,7 +13,7 @@ const Article = ({articles, id}: ArticleComponentProps) => {
             <Row className="justify-content-center m-3 p-3">
                 <Col key={id}>
                 <Card className="cardColor rounded border border-dark">
-                <Card.Img variant="top" src={articles.image_url} />
+                <Card.Img variant="top" src={articles.image_url}/>
                     <Card.Body>
                         <Card.Title>{articles.title}</Card.Title>
                         <Card.Text>

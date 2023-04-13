@@ -30,7 +30,7 @@ const MainPage = () => {
             <h1 className="text m-4">SpaceFlight News!</h1>
             <Row className="g-1">
                 {articles.map((article)=>(
-                    <Col md={4} lg={3} key={article.id}>
+                    <Col md={6} lg={3} key={article.id}>
                         <Article articles={article} id={article.id}/>
                     </Col>
                 
