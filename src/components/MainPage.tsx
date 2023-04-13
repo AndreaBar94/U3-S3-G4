@@ -14,7 +14,6 @@ const MainPage = () => {
             if(response.ok){
                 const articlesFetched = await response.json()
                 setArticles(articlesFetched.results)
-                console.log(articles)
             }
         } catch (error) {
             console.log(error)
@@ -31,7 +30,7 @@ const MainPage = () => {
             <h1 className="text m-4">SpaceFlight News!</h1>
             <Row className="g-1">
                 {articles.map((article)=>(
-                    <Col md={4} lg={3} >
+                    <Col md={4} lg={3} key={article.id}>
                         <Article articles={article} id={article.id}/>
                     </Col>
                 
