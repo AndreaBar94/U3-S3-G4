@@ -41,9 +41,7 @@ const ArtDetails = () => {
                     <Col md={6} className="p-4 text-start">
                     <h3 className="pb-2">{article.title}</h3>
                     <p className="pb-2">{article.summary}</p>
-                    <p className="pb-2">{article.events}</p>
                     <p className="pb-2">{article.news_site}</p>
-                    <p className="pb-2">{article.launches}</p>
                     <p className="pb-2">{article.featured}</p>
                     <Link to={article.url} className="pb-2">{article.url}</Link>
                 </Col>
