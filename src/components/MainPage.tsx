@@ -33,7 +33,6 @@ const MainPage = () => {
                     <Col md={6} lg={3} key={article.id}>
                         <Article articles={article} id={article.id}/>
                     </Col>
-                
                 ))}
             </Row>
         </>
