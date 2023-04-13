@@ -27,7 +27,7 @@ const MainPage = () => {
 
     return(
         <>
-            <h1 className="text m-4">SpaceFlight News!</h1>
+            <h1 className="title m-4 p-3 rounded">SpaceFlight News!</h1>
             <Row className="g-1">
                 {articles.map((article)=>(
                     <Col md={6} lg={3} key={article.id}>
