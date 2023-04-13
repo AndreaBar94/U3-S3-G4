@@ -1,17 +1,18 @@
 import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 function NavbarComponent() {
     return (
         <Nav
         className="navbar justify-content-center p-3 bg-opacity-50">
             <Nav.Item>
-                <Nav.Link className="navBtn" href="#" id="home">Home</Nav.Link>
+                <Link className="navBtn text-decoration-none mx-3" to="/">Home</Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link className="navBtn" href="#">About</Nav.Link>
+                <Link className="navBtn text-decoration-none mx-3" to="*">About</Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link className="navBtn" href="#">Browse</Nav.Link>
+                <Link className="navBtn text-decoration-none mx-3" to="*">Browse</Link>
             </Nav.Item>
         </Nav>
     );
